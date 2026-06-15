@@ -1,0 +1,14 @@
+# Build outputs
+build/
+out/
+
+# IDE
+.vs/
+.vscode/
+*.user
+*.suo
+*.sln.docstates
+
+# OS
+Thumbs.db
+Desktop.ini
