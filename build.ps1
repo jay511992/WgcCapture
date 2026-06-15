@@ -29,6 +29,8 @@ function Build-Arch {
     Copy-Item (Join-Path $BuildDir "bin\$Configuration\CaptureGw2.exe") $OutDir -Force -ErrorAction SilentlyContinue
     Copy-Item (Join-Path $BuildDir "bin\$Configuration\TestPrintWindow.exe") $OutDir -Force -ErrorAction SilentlyContinue
     Copy-Item (Join-Path $BuildDir "bin\$Configuration\TestDesktopDup.exe") $OutDir -Force -ErrorAction SilentlyContinue
+    Copy-Item (Join-Path $BuildDir "bin\$Configuration\GCExample.exe") $OutDir -Force -ErrorAction SilentlyContinue
+    Copy-Item (Join-Path $BuildDir "bin\$Configuration\GCSessionExample.exe") $OutDir -Force -ErrorAction SilentlyContinue
     Copy-Item (Join-Path $Root "include\GraphicsCapture.h") $OutDir -Force
 
     Write-Host "Output: $OutDir" -ForegroundColor Green
